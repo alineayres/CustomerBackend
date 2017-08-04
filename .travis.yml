@@ -4,8 +4,7 @@ sudo: false
 addons:
   apt:
     packages:
-      #- oracle-java8-installer
-      - oracle-java7-installer
+      - oracle-java8-installer
 
 jdk:
   - oraclejdk8
