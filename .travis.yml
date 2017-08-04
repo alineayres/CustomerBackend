@@ -11,8 +11,9 @@ jdk:
   - oraclejdk7
   - openjdk6
 
-mvn test -B
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+before_script:
+  - mvn test -B
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
   - jdk_switcher use oraclejdk8
