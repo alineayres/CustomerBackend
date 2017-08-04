@@ -11,10 +11,12 @@ jdk:
   - oraclejdk7
   - openjdk6
 
+mvn test -B
+mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
 script:
   - jdk_switcher use oraclejdk8
   - # do stuff with Java 8
   - jdk_switcher use oraclejdk7
   - # do stuff with Java 7
-  - mvn test -B
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
