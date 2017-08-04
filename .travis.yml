@@ -6,10 +6,10 @@ addons:
     packages:
       - oracle-java8-installer
 
-jdk:
-  - oraclejdk8
-  - oraclejdk7
-  - openjdk6
+#jdk:
+ # - oraclejdk8
+ # - oraclejdk7
+ # - openjdk6
 
 before_script:
   - mvn test -B
